@@ -67,7 +67,7 @@ class CreateProduct extends Component {
               <label>Price</label>
               <input
                 required
-                type="text"
+                type="number"
                 className="form-control"
                 name="price"
                   placeholder='0'
