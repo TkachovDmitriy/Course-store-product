@@ -6,16 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Install the dependencies and devDependencies and start the server.
 
 ```sh
-$ cd react-store-firebase-app
+$ cd Course-store-product
 $ npm install -d
 $ npm start
-```
-
-For production environments...
-
-```sh
-$ npm install --production
-$ NODE_ENV=production node app
 ```
 
 ## Project screens
