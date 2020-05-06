@@ -91,7 +91,7 @@ class CreateProduct extends Component {
                 </select>
              </div>
             <div className="form-group">
-              <label>Price</label>
+              <label>Discount Date</label>
               <input
                 type="date"
                 className="form-control"
