@@ -6,6 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Install the dependencies and devDependencies and start the server.
 
 ```sh
+$ git clone https://github.com/TkachovDmitriy/Course-store-product.git
 $ cd Course-store-product
 $ npm install -d
 $ npm start
