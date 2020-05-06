@@ -41,5 +41,6 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:5000/react-product-list-app/us-central1/api"
+  "proxy": "https://us-central1-react-product-list-app.cloudfunctions.net/api",
+ "secure":false
 }

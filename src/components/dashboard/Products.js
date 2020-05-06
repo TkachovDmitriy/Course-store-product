@@ -6,6 +6,8 @@ import { getAllProducts, deleteOneProduct } from '../../actions/products.js'
 import Card from './ProductCard.js'
 
 function Products (props) {
+
+
     const style = {
         display: 'flex',
         justifyContent: 'space-around',
@@ -36,6 +38,12 @@ function Products (props) {
         </div>
         )
 }
+
+const propTypes = {
+        products:PropTypes.array.isRequired,
+        getAllProducts:PropTypes.func.isRequired,
+        deleteOneProduct:PropTypes.func.isRequired,
+    }
 
 const mapStateToProps = state => ({
     products: state.products.products

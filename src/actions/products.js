@@ -1,13 +1,12 @@
 import axios from 'axios'
 
-import { GET_PRODUCTS, DELETE_PRODUCT, ADD_PRODUCT, GET_ERRORS, SAVE_ID_PRODUCT, CHANGE_PRODUCT, IMAGE_UPLOAD } from './types.js'
+import { GET_PRODUCTS, DELETE_PRODUCT, ADD_PRODUCT,  SAVE_ID_PRODUCT, CHANGE_PRODUCT, IMAGE_UPLOAD } from './types.js'
 import { createMessage } from './messages.js'
 
 //GET_ERRORS
 export const getAllProducts = () => async  (dispatch, getState) => {
     try{
        let res = await axios.get('/products')
-           console.log(res.data) 
         dispatch({
             type: GET_PRODUCTS,
             payload: res.data
@@ -38,7 +37,6 @@ export const addProduct = (productData, history) => async (dispatch) => {
         axios.defaults.headers.common['Authorization'] = token
 
         const res = await axios.post('/product', productData)
-        console.log(res)
         dispatch(createMessage({ addProduct: 'Product Added' }))
         dispatch({
             type: ADD_PRODUCT,

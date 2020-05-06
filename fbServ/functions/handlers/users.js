@@ -127,6 +127,7 @@ exports.uploadImage = (req, res) => {
                             return db.doc(`/products/${productId}`).update({ imageUrl })
                         }
                     })
+                    .catch( err => { return res.json({ message: 'wrong upload'})})
             })
             .then( () => {
                 return res.json({ message: "image uploaded successfully" })

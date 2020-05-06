@@ -7,12 +7,11 @@ import PropTypes from 'prop-types'
 export class Alerts extends Component {
 
     static propTypes = {
+        message:PropTypes.object.isRequired
     }
 
     componentDidUpdate(prevProps) { 
 
-        console.log('PREV', prevProps)
-        console.log('PREV', this.props.error)
         const { errors, alert, message, error }  = this.props
         if (error !== prevProps.error) {
             if (error.general) alert.error(`${error.general}`) 

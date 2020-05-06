@@ -1,8 +1,14 @@
 import React, { Component } from 'react'
 import { connect }  from 'react-redux'
+import PropTypes from 'prop-types'
 import { uploadImage } from '../../actions/products.js'
 
 class Image extends Component { 
+
+    static propTypes = {
+        uploadImage:PropTypes.func.isRequired,
+        products:PropTypes.object.isRequired,
+    }
 
     onChange = e => {
         const image = e.target.files[0]

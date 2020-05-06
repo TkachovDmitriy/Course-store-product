@@ -1,4 +1,22 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Installation
+
+
+
+Install the dependencies and devDependencies and start the server.
+
+```sh
+$ cd react-store-firebase-app
+$ npm install -d
+$ npm start
+```
+
+For production environments...
+
+```sh
+$ npm install --production
+$ NODE_ENV=production node app
+```
 
 ## Project screens
 

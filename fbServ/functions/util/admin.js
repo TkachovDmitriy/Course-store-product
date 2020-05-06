@@ -4,6 +4,7 @@ const serviceAccount = require('../react-product-list-app-firebase-adminsdk-uqze
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
+  storageBucket: "gs://react-product-list-app.appspot.com",
   databaseURL: "https://react-product-list-app.firebaseio.com"
 })
 

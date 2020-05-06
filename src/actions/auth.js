@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { returnErrors } from './messages.js'
 
-import { USER_LOADED, USER_LOADING, GET_ERRORS } from './types.js'
+import { USER_LOADED, USER_LOADING, } from './types.js'
 
 
 export const login = (userData, history) => async  (dispatch) => {
